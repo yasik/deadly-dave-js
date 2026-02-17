@@ -11,5 +11,8 @@
     "web:build": "npm run build",
     "web:serve": "node scripts/serve.mjs",
     "web:dev": "npm run web:build && npm run web:serve"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
