@@ -1,0 +1,15 @@
+{
+  "name": "deadly-dave-ts-port",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audio:build": "node scripts/build-sfx.mjs",
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:watch": "npm run build && node --test --watch tests/*.test.mjs",
+    "web:build": "npm run build",
+    "web:serve": "node scripts/serve.mjs",
+    "web:dev": "npm run web:build && npm run web:serve"
+  }
+}

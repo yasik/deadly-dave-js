@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deadly Dave TS Port - Phaser Preview</title>
+    <style>
+      :root {
+        --bg1: #0a0f1f;
+        --bg2: #1c2f4a;
+        --grid: rgba(255, 255, 255, 0.04);
+        --panel: rgba(10, 16, 32, 0.75);
+        --ink: #f5f7ff;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        color: var(--ink);
+        font-family: "Courier New", "Andale Mono", "SFMono-Regular", monospace;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 20% 10%, rgba(35, 91, 182, 0.38), transparent 28%),
+          radial-gradient(circle at 80% 80%, rgba(236, 93, 70, 0.24), transparent 30%),
+          linear-gradient(165deg, var(--bg1), var(--bg2));
+        position: relative;
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 22px 22px;
+        pointer-events: none;
+      }
+
+      .shell {
+        width: min(100vw - 18px, 1100px);
+        padding: 10px;
+        border-radius: 12px;
+        background: var(--panel);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(2px);
+      }
+
+      #game {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+      }
+
+      .meta {
+        margin-top: 8px;
+        font-size: 12px;
+        opacity: 0.85;
+      }
+
+      .meta strong {
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <div id="game"></div>
+      <div class="meta">
+        <strong>PHASER STATIC MAP PREVIEW</strong> · Source level: <code>public/levels/level1.ddt</code>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+    <script type="module" src="./dist/browser/phaser-app.js"></script>
+  </body>
+</html>
+

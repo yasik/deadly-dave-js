@@ -1,0 +1,80 @@
+{
+  "silence": {
+    "source": "silence",
+    "samplesPerSymbol": 240,
+    "samples": 240,
+    "seconds": 0.005
+  },
+  "got_trophy": {
+    "source": "got_trophy",
+    "samplesPerSymbol": 162,
+    "samples": 41310,
+    "seconds": 0.937
+  },
+  "treasure": {
+    "source": "treasure",
+    "samplesPerSymbol": 162,
+    "samples": 5022,
+    "seconds": 0.114
+  },
+  "nextlevel": {
+    "source": "nextlevel",
+    "samplesPerSymbol": 162,
+    "samples": 269568,
+    "seconds": 6.113
+  },
+  "walking": {
+    "source": "walking",
+    "samplesPerSymbol": 440,
+    "samples": 880,
+    "seconds": 0.02
+  },
+  "jumping": {
+    "source": "jumping",
+    "samplesPerSymbol": 345,
+    "samples": 110055,
+    "seconds": 2.496
+  },
+  "got_something": {
+    "source": "got_something",
+    "samplesPerSymbol": 162,
+    "samples": 16848,
+    "seconds": 0.382
+  },
+  "explosion": {
+    "source": "explosion",
+    "samplesPerSymbol": 240,
+    "samples": 62880,
+    "seconds": 1.426
+  },
+  "ouch": {
+    "source": "ouch",
+    "samplesPerSymbol": 240,
+    "samples": 18720,
+    "seconds": 0.424
+  },
+  "flying": {
+    "source": "flying",
+    "samplesPerSymbol": 240,
+    "samples": 240,
+    "seconds": 0.005
+  },
+  "falling": {
+    "source": "falling",
+    "samplesPerSymbol": 240,
+    "samples": 76320,
+    "seconds": 1.731
+  },
+  "tojetpack": {
+    "source": "tojetpack",
+    "samplesPerSymbol": 240,
+    "samples": 10560,
+    "seconds": 0.239
+  },
+  "climbing": {
+    "source": "walking",
+    "samplesPerSymbol": 440,
+    "samples": 880,
+    "seconds": 0.02
+  }
+}
